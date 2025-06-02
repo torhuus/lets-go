@@ -46,6 +46,7 @@ func main() {
 		logger: logger,
 		snippets: &models.SnippetModel{DB: db},
 		templateCache: templateCache,
+
 	}
 
 	logger.Info("starting server", slog.String("addr", ":4000"))
